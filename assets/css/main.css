@@ -134,7 +134,7 @@ body {
 }
 
 /* Admin */
-.app .Switcher .user {
+.app .Switcher .admin {
   display: none;
 }
 
@@ -149,21 +149,18 @@ body {
 table {
   background-color: #555;
   color: white;
-  width: 10px;
+  width: 100%;
   text-align: center;
   border: 2px solid black;
 }
 
 table thead th {
-  font-size: 10px;
   padding: 10px;
   border-right: 2px solid black;
   border-bottom: 2px solid #444;
 }
 
 table tbody td {
-  font-size: 10px;
-
   padding: 10px;
   border-right: 2px solid black;
   border-bottom: 2px solid #444;
@@ -180,18 +177,6 @@ table tbody td {
 
 .app .Switcher .user .card .inp-tvsh {
   margin-top: 30px;
-}
-
-@media (max-width: 631px) {
-  .app .Switcher .user .card .inp-tvsh {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 430px) {
-  .app .Switcher .user .card .inp-tvsh {
-    font-size: 9px;
-  }
 }
 
 .app .Switcher .user .card #valid {
