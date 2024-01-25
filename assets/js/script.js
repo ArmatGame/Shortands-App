@@ -128,26 +128,19 @@ function showData() {
   if (localStorage.theShorthands != null) {
     theShorthands.map((e, i) => {
       tbody.innerHTML += `
-        <tr>
-          <th scope="row">#${i + 1}</th>
-          <td>${e.inp_sh}</td>
-          <td>${e.inp_shv}</td>
-          <td><button onclick="deleteElement(${i})">Delete</button></td>
-          <td><button onclick="updateElement(${i})">Update</button></td>
-        </tr>
+      <tr>
+        <td>#${i + 1}</td>
+        <td>${e.inp_sh}</td>
+        <td>${e.inp_shv}</td>
+        <td><button onclick="deleteElement(${i})">Delete</button></td>
+        <td><button onclick="updateElement(${i})">Update</button></td>
+      </tr>
       `;
     });
   } else {
     tbody.innerHTML = "";
   }
 }
-      // <tr>
-      //   <td>#${i + 1}</td>
-      //   <td>${e.inp_sh}</td>
-      //   <td>${e.inp_shv}</td>
-      //   <td><button onclick="deleteElement(${i})">Delete</button></td>
-      //   <td><button onclick="updateElement(${i})">Update</button></td>
-      // </tr>
 
 // Delete Element
 function deleteElement(i) {
